@@ -164,8 +164,9 @@ export async function checkBrowserRuntime(targetUrl, options = {}) {
           }
 
           if (assertText && assertText.length > 0) {
+            const lowerBody = (val.bodyText || "").toLowerCase();
             for (const text of assertText) {
-              if (!val.bodyText.includes(text)) {
+              if (!lowerBody.includes(text.toLowerCase())) {
                 domErrors.push(`Required text "${text}" was not found in rendered DOM.`);
               }
             }
