@@ -1,0 +1,24 @@
+{
+  "name": "gatecheck",
+  "version": "1.0.0",
+  "description": "Deterministic Pre-Flight Verification & Quality Control Engine for Antigravity Projects",
+  "main": "src/index.js",
+  "bin": {
+    "gatecheck": "./src/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/index.js https://etf-rebalancer-afolrgjyzq-uw.a.run.app"
+  },
+  "keywords": [
+    "antigravity",
+    "gatecheck",
+    "preflight",
+    "quality-control",
+    "cdp",
+    "verification"
+  ],
+  "author": "Dr. A. Alex Mohit",
+  "license": "MIT"
+}
